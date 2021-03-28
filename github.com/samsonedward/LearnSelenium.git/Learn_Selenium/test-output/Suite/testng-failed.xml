@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="ParametersThroughXML(failed)">
+    <parameter name="testParameters1" value="testParameters1"/>
+    <parameter name="testParameters2" value="testParameters2"/>
+    <parameter name="confBeforeParameter" value="confBeforeParameter"/>
+    <parameter name="confAfterParameter" value="confAfterParameter"/>
+    <classes>
+      <class name="ParameterizationTestNG.ParametersAtMethodLevel">
+        <methods>
+          <include name="testMethod2"/>
+        </methods>
+      </class> <!-- ParameterizationTestNG.ParametersAtMethodLevel -->
+    </classes>
+  </test> <!-- ParametersThroughXML(failed) -->
+</suite> <!-- Failed suite [Suite] -->
